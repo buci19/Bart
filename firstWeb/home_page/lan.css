@@ -1,0 +1,166 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.first_page{
+    position: relative;
+    height: 3000px;
+    width: 100%;
+    background-color: black;
+}
+
+.menu_01{
+    float: left;
+    width: 300px;
+    height: 20px;
+    left: 50px;
+    top: 35px;
+    position: relative;
+}
+.menu_01 p{
+    color: white;
+    font-size: 26px;
+}
+.menu_02{
+    float: right;
+    height: 30px;
+    width: 30px;
+
+}
+.menu_02 img{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 35px;
+    right: 35px;
+}
+.menu_03{
+    height: 30px;
+    width: 30px;
+    float: left;
+}
+.menu_03 img{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 40px;
+    left: 100px;
+
+}
+.menu_04{
+    height: 28px;
+    width: 340px;
+    float: left;  
+}
+.menu_04 input{
+    top: 40px;
+    left: 120px;
+    position: relative;
+    height: 28px;
+    width: 340px;
+}
+.menu_05{
+    height: 30px;
+    width: 50px;
+    float: right;
+}
+.menu_05 a{
+    color: white;
+    font-size: 16px;
+    top: 40px;
+    right: 40px;
+    position: relative;
+}
+.banner {
+    width: 1200px;
+    height: 40px;
+    position: absolute;
+    top: 110px;
+    left: 40px;
+    
+}
+.banner a{
+    color: white;
+    margin-left: 22px;
+}
+.Chained{
+    height: 270x;
+    width: 180px;
+    position: absolute;
+    top: 170px;
+    left: 100px;
+    overflow: hidden;
+}
+.Chained img{
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s ease-out;
+}
+.Chained img:hover{
+    transform: scale(1.1);
+}
+.jiaodoushi{
+    height: 270x;
+    width: 180px;
+    position: absolute;
+    top: 170px;
+    left: 380px;
+    overflow: hidden;
+}
+.jiaodoushi img{
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s ease-out;
+}
+.jiaodoushi img:hover{
+    transform: scale(1.1);
+}
+.buluoxingcunzhe{
+    height: 270x;
+    width: 180px;
+    position: absolute;
+    top: 170px;
+    left: 660px;
+    overflow: hidden;
+}
+.buluoxingcunzhe img{
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s ease-out;
+}
+.buluoxingcunzhe img:hover{
+    transform: scale(1.1);
+}
+.gangtiexiongxin4{
+    height: 270x;
+    width: 180px;
+    position: absolute;
+    top: 170px;
+    left: 940px;
+    overflow: hidden;
+}
+.gangtiexiongxin4 img{
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s ease-out;
+}
+.gangtiexiongxin4 img:hover{
+    transform: scale(1.1);
+}
+.huangyedezhaohuan{
+    height: 270x;
+    width: 180px;
+    position: absolute;
+    top: 540px;
+    left: 100px;
+    overflow: hidden;
+}
+.huangyedezhaohuan img{
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s ease-out;
+}
+.huangyedezhaohuan img:hover{
+    transform: scale(1.1);
+}
