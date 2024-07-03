@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            text-align: center;
+            color: white;
+        }
+        body{
+            background-color: black;
+        }
+        p{
+            color: white;
+            line-height: 40px;
+        }
+        a{
+            color: white;
+        }
+        /* 弹窗样式 */
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 180px;
+            height: 200px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            z-index: 9999;
+        }
+        .popup h2{
+            color: black;
+        }
+        .first{
+            height: 150px;
+            height: 150px;
+            position: absolute;
+            float: left;
+            left: 33px;
+            bottom: 10px;
+        }
+        .second{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            float: right;
+            top: 0;
+            right: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>钢铁雄心4游戏介绍</h2>
+    <p>《钢铁雄心4》（Hearts of Iron IV）是一款由瑞典游戏发行商Paradox Interactive开发并发行的著名二战模拟游戏，它是《钢铁雄心》系列的一款作品.现已在Steam平台上架。以下是该游戏的详细介绍：</p>
+    <p>游戏背景与设定：
+        背景设定：游戏聚焦于第二次世界大战的形成与进行，玩家可以选择任意国家参与战斗，制定战略和决策，与其他国家互动，体验到历史的重现。
+        主要角色：游戏中包含了诸如罗斯福、斯大林、丘吉尔等二战时期的著名历史人物，玩家可以扮演这些国家的领导人，管理国家的政治、外交、经济和科技发展。</p>
+    <p>游戏模式：
+        军事策略：玩家可以管理和指挥自己的军队，包括陆军、海军和空军。制定战略计划、调动部队、发起进攻或防御，并与其他国家进行战争或外交交涉。
+        国家管理：除了军事行动外，玩家还需要管理国家的政治、经济、科技和外交等方面。可以制定政策、签订条约、进行外交谈判、研究科技并管理资源，以确保国家的稳定和繁荣。
+        历史重现：游戏致力于重现第二次世界大战时期的历史，包含了大量的历史事件、人物和战役。玩家可以参与这些历史事件并影响战争的走向。
+        丰富的任务系统：游戏中包含大量的任务，玩家可以通过完成任务来提升角色等级和解锁新武器。同时，可以选择不同的路线来完成这些任务，并获得相应的经验和金钱奖励。
+        多人模式：支持多人在线游戏，玩家可以与好友组队完成各种挑战，也可以独自进行战斗。还可以加入其他玩家的团队，共同完成目标。
+        装备强化系统：游戏中包含了种类繁多的武器装备，玩家可以根据自己的需要进行强化，以获得更好的属性效果。但强化的成功率会随着操作失误而降低，因此需要谨慎使用。
+        自定义功能：玩家可以根据自己的喜好和需求自定义界面布局、快捷键等，提高工作效率。
+        战斗系统：游戏采用了回合制的战斗系统，玩家可以在战斗中制定详细的战略和计划。战场上的地形、天气和时间等因素都会对战斗产生影响。
+        外交系统：游戏中的外交系统也十分复杂，玩家需要通过外交手段与其他国家保持良好的关系，以获得更多的资源和支持。可以通过签订条约、进行贸易、派遣间谍等方式来影响其他国家的政策。
+        科技研发：玩家可以投入资源进行科技研究，以提升国家的军事实力和经济实力。不同的科技研究会有不同的影响，玩家需要根据自己的需求进行选择。
+        模组支持：游戏支持大量的模组，玩家可以通过添加模组来增加新的游戏内容和功能，提高了游戏的可玩性和扩展性。</p>
+    <p>游戏特色：
+        科技研发：游戏中的科技研发系统让玩家能够投入资源进行科技研究，以提升国家的军事实力和经济实力。不同的科技研究会有不同的影响，玩家需要根据自己的需求进行选择。
+        模组支持：游戏支持大量的模组，玩家可以通过添加模组来增加新的游戏内容和功能。模组的存在极大地扩展了游戏的可玩性和趣味性，让玩家能够根据自己的喜好来定制游戏。。</p>
+    <p>语言与汉化：
+        游戏原本不支持中文，但已有汉化工具发布，允许玩家将游戏界面及内容转化为中文，提高了玩家的游戏体验。</p>
+    <p>网站说明：不能将本网站的资源用于商业用途，如有发现，后果自负!!!</p>
+    <button onclick="showPopup()">点我</button>
+    <div class="popup" id="popup">
+        <h2>扫一扫</h2>
+        <img src="E:\vscode.txt\firstWeb\home_page\img\wx.jpg" alt="" class="first">
+        <img src="E:\vscode.txt\firstWeb\home_page\img\关闭.png" alt="" onclick="hidePopup()"class="second">
+    </div>
+    <script>
+        // 显示弹窗
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        // 隐藏弹窗
+        function hidePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
