@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            text-align: center;
+            color: white;
+        }
+        body{
+            background-color: black;
+        }
+        p{
+            color: white;
+            line-height: 40px;
+        }
+        a{
+            color: white;
+        }
+        /* 弹窗样式 */
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 180px;
+            height: 200px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            z-index: 9999;
+        }
+        .popup h2{
+            color: black;
+        }
+        .first{
+            height: 150px;
+            height: 150px;
+            position: absolute;
+            float: left;
+            left: 33px;
+            bottom: 10px;
+        }
+        .second{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            float: right;
+            top: 0;
+            right: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>角斗士游戏介绍</h2>
+    <p>《角斗士》是一款AVG恋爱养成类游戏，现已在Steam平台上架。以下是该游戏的详细介绍：</p>
+    <p>游戏背景与玩法：
+        《Gladiator》是RPG游戏《坠入苍蓝色的深渊》的后传，故事发生在主线后的两年之后，一个类似于古罗马帝
+        国的架空世界。在这个世界中，王国的首都耸立着一座巨大的角斗场，奴隶主饲养着奴隶供贵族玩赏，而主角便是
+        赛场上的一员。</p>
+    <p>剧情内容：
+        游戏主要讲述了王都商业街的掌控者戴伦和一名角斗士奴隶戎克之间的故事。玩家将以角斗士的生活为主线，通过不
+        同的视角触发各式剧情，带领主角走向不同的命运。游戏中包含丰富的角色设定和多样化的剧情选择，使得每个玩家
+        都能体验到不同的故事走向和结局</p>
+    <p>语言与汉化：
+        游戏原本不支持中文，但已有汉化工具发布，允许玩家将游戏界面及内容转化为中文，提高了玩家的游戏体验。</p>
+    <p>网站说明：不能将本网站的资源用于商业用途，如有发现，后果自负!!!</p>
+    <button onclick="showPopup()">点我</button>
+    <div class="popup" id="popup">
+        <h2>扫一扫</h2>
+        <img src="E:\vscode.txt\firstWeb\home_page\img\wx.jpg" alt="" class="first">
+        <img src="E:\vscode.txt\firstWeb\home_page\img\关闭.png" alt="" onclick="hidePopup()"class="second">
+    </div>
+    <script>
+        // 显示弹窗
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        // 隐藏弹窗
+        function hidePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
