@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            text-align: center;
+            color: white;
+        }
+        body{
+            background-color: black;
+        }
+        p{
+            color: white;
+            line-height: 40px;
+        }
+        a{
+            color: white;
+        }
+        /* 弹窗样式 */
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 180px;
+            height: 200px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            z-index: 9999;
+        }
+        .popup h2{
+            color: black;
+        }
+        .first{
+            height: 150px;
+            height: 150px;
+            position: absolute;
+            float: left;
+            left: 33px;
+            bottom: 10px;
+        }
+        .second{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            float: right;
+            top: 0;
+            right: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>部落幸存者游戏介绍</h2>
+    <p>《部落幸存者》是一款以文明生存为主题的经营模拟类游戏，现已在Steam平台上架。以下是该游戏的详细介绍：</p>
+    <p>游戏背景：
+        游戏背景设定在一个资源匮乏、环境恶劣的未来世界或类似中世纪西欧小镇的环境中。玩家需要在这个废墟或新领土
+        上定居，并带领部落成员生存下来</p>
+    <p>游戏模式：
+        生存挑战：玩家需要依赖少量的初始物资进行开垦、种植、狩猎、采集等活动，以获取食物、水和其他生存必需品。同时，还需要应对自然灾害（如山洪、台风、干旱等）和其他敌对势力的威胁。
+        城镇建设：玩家可以建造各种建筑和设施来满足部落成员的需求，包括住房、农田、工作坊、市场等。通过合理布局和规划，可以提升城镇的效率和居民的生活质量。
+        资源管理：游戏中涉及多种资源的采集、加工和贸易。玩家需要管理资源库存，确保资源的有效利用和合理分配。同时，还可以通过贸易与其他部落或势力进行资源交换。
+        人口管理：人口是城镇发展的基础。玩家需要关注居民的生育率、健康状态和幸福指数，确保人口稳定增长。同时，还需要为居民提供教育、医疗等公共服务，提高其生活质量和生产能力。
+        科技发展：游戏设有科技树系统，玩家可以通过研究科技来提升部落的发展水平。科技树包括农业、加工、矿业、建造、宜居、教育、物流和贸易等多个领域，每个领域都有多个科技点可供解锁。
+        社交与外交：玩家可以与其他部落进行贸易和外交互动，建立友好关系或竞争关系。通过权衡利弊和制定策略，可以保护部落利益并推动城镇的发展。</p>
+    <p>游戏特色：
+        深度经营与建设：游戏允许玩家从零开始，逐步建设和发展自己的部落或城镇。玩家需要管理资源、规划建筑布局、优化生产流程，并确保居民的生存和发展需求得到满足。这种深度的经营和建设玩法为玩家提供了丰富的策略性和挑战性。
+        真实生存挑战：在游戏中，玩家将面临各种生存挑战，如食物短缺、疾病传播、自然灾害等。玩家需要灵活运用各种策略和资源来应对这些挑战，确保部落的存续和发展。这种真实的生存体验增加了游戏的紧张感和代入感。</p>
+    <p>语言与汉化：
+        游戏原本不支持中文，但已有汉化工具发布，允许玩家将游戏界面及内容转化为中文，提高了玩家的游戏体验。</p>
+    <p>网站说明：不能将本网站的资源用于商业用途，如有发现，后果自负!!!</p>
+    <button onclick="showPopup()">点我</button>
+    <div class="popup" id="popup">
+        <h2>扫一扫</h2>
+        <img src="E:\vscode.txt\firstWeb\home_page\img\wx.jpg" alt="" class="first">
+        <img src="E:\vscode.txt\firstWeb\home_page\img\关闭.png" alt="" onclick="hidePopup()"class="second">
+    </div>
+    <script>
+        // 显示弹窗
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        // 隐藏弹窗
+        function hidePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
