@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            text-align: center;
+            color: white;
+        }
+        body{
+            background-color: black;
+        }
+        p{
+            color: white;
+            line-height: 40px;
+        }
+        a{
+            color: white;
+        }
+        /* 弹窗样式 */
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 180px;
+            height: 200px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            z-index: 9999;
+        }
+        .popup h2{
+            color: black;
+        }
+        .first{
+            height: 150px;
+            height: 150px;
+            position: absolute;
+            float: left;
+            left: 33px;
+            bottom: 10px;
+        }
+        .second{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            float: right;
+            top: 0;
+            right: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Chained Together游戏介绍</h2>
+    <p>《Chained Together》是一款多人冒险跑酷动作游戏，现已在Steam平台上架。以下是该游戏的详细介绍：</p>
+    <p>游戏背景与玩法：
+        玩家将从地狱的最底层开始旅程，为了逃离灼热的酷热而不断向上攀爬。
+        游戏支持单人游玩，也支持最多4人（或5人，根据参考文章有所不同）的线上协力游玩。
+        当玩家进行协力游玩时，每个伙伴身上都会系着2~3m左右的锁链并需要一起行动。在攻略复杂关卡时，需要所有人互相配合慎重前进，如果有人随意行动失误掉落，将连累其他玩家一并遭遇危险。</p>
+    <p>游戏模式：
+        游戏中共设有三种不同模式：初学者、普通和熔岩模式。
+        初学者模式中允许玩家在重大跌落前返回到达的最高点。
+        普通模式中则没有特定的帮助，一旦失败就要重头开始。
+        熔岩模式则是要在被迎面而来的熔岩吞没之前快速攀爬</p>
+    <p>游戏特色：
+        最大的特色在于多人协力游玩的部分，需要玩家之间的高度配合和协作。
+        游戏关卡设计多变，包括岩山、树木或近代建筑等各种环境，每种环境都会带来不同的挑战。</p>
+    <p>语言与汉化：
+        游戏原本不支持中文，但已有汉化工具发布，允许玩家将游戏界面及内容转化为中文，提高了玩家的游戏体验。</p>
+    <p>网站说明：不能将本网站的资源用于商业用途，如有发现，后果自负!!!</p>
+    <button onclick="showPopup()">点我</button>
+    <div class="popup" id="popup">
+        <h2>扫一扫</h2>
+        <img src="E:\vscode.txt\firstWeb\home_page\img\wx.jpg" alt="" class="first">
+        <img src="E:\vscode.txt\firstWeb\home_page\img\关闭.png" alt="" onclick="hidePopup()"class="second">
+    </div>
+    <script>
+        // 显示弹窗
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        // 隐藏弹窗
+        function hidePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
