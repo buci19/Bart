@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            text-align: center;
+            color: white;
+        }
+        body{
+            background-color: black;
+        }
+        p{
+            color: white;
+            line-height: 40px;
+        }
+        a{
+            color: white;
+        }
+        /* 弹窗样式 */
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 180px;
+            height: 200px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            z-index: 9999;
+        }
+        .popup h2{
+            color: black;
+        }
+        .first{
+            height: 150px;
+            height: 150px;
+            position: absolute;
+            float: left;
+            left: 33px;
+            bottom: 10px;
+        }
+        .second{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            float: right;
+            top: 0;
+            right: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>荒野的召唤游戏介绍</h2>
+    <p>《荒野的召唤》（theHunter: Call of the Wild）是一款以狩猎为主题的游戏，现已在Steam平台上架。以下是该游戏的详细介绍：</p>
+    <p>游戏背景：
+        游戏将玩家带入一个生机勃勃且风景如画的开放世界中，玩家将在这个世界中与各类动植物为伴，体验真实的狩猎生活。游戏提供了多个
+        精心打造的狩猎保护区，每个区域都有其独特的生物群落和地貌特征，为玩家带来丰富的狩猎体验。</p>
+    <p>角色设定：
+        游戏初期，玩家作为一名新晋猎人前往狩猎特别保护区，通过追踪动物、了解它们的动态情况来制定相应的狩猎行动。玩家可以定制自己的角
+        色，包括性别、脸型、服装以及角色姓名，并通过完成任务和挑战来提升角色等级，解锁新技能和武器</p>
+    <p>游戏特色：
+        狩猎系统：游戏试图打造真实的狩猎流程，玩家不仅可以通过视觉发现猎物进行狩猎，还可以通过动物叫声、动物踪迹等线索去追踪搜寻猎物。游戏中动物的行为模式复杂多变，它们会根据当前的需求和警觉状态来调整自己的行为，增加了狩猎的挑战性和趣味性。
+        天气与环境：游戏中变化万千的天气和日夜的完整循环为狩猎增添了更多的不确定性和挑战性。玩家需要学会利用风向和环境声响来掩盖自己的行动声音，提高狩猎的成功率。
+        武器装备：游戏提供了多种武器装备供玩家选择，包括步枪、手枪、霰弹枪和弓箭等。每种武器都有其独特的性能和用途，玩家可以根据自己的喜好和狩猎需求来选择合适的武器。此外，武器还可以进行相应的瞄具搭配和弹药选择，以提高狩猎的准确性和效果。
+        多人游戏模式：游戏支持最多8人联机游戏，玩家可以与他人合作狩猎或进行竞争。游戏内还设置了各种挑战和不定期的狩猎活动，为玩家提供更多的互动和竞技机会</p>
+    <p>语言与汉化：
+        游戏原本不支持中文，但已有汉化工具发布，允许玩家将游戏界面及内容转化为中文，提高了玩家的游戏体验。</p>
+    <p>网站说明：不能将本网站的资源用于商业用途，如有发现，后果自负!!!</p>
+    <button onclick="showPopup()">点我</button>
+    <div class="popup" id="popup">
+        <h2>扫一扫</h2>
+        <img src="E:\vscode.txt\firstWeb\home_page\img\wx.jpg" alt="" class="first">
+        <img src="E:\vscode.txt\firstWeb\home_page\img\关闭.png" alt="" onclick="hidePopup()"class="second">
+    </div>
+    <script>
+        // 显示弹窗
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        // 隐藏弹窗
+        function hidePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
